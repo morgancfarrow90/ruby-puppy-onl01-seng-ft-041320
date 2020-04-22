@@ -20,7 +20,9 @@ class Dog
     end
   end
   
-  
+  def save
+    self.class.all << self
+  end
       
 
   def self.clear_all
